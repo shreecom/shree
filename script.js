@@ -6,18 +6,21 @@ const slides = document.querySelectorAll('.slide');
 const prevBtn = document.querySelector('.prev');
 const nextBtn = document.querySelector('.next');
 const dotsContainer = document.querySelector('.slider-dots');
+const navLinks = document.querySelectorAll('.nav-link');
 
 // Mobile Menu Toggle
 mobileMenu.addEventListener('click', () => {
     mobileMenu.classList.toggle('active');
     navMenu.classList.toggle('active');
+    document.body.classList.toggle('menu-open'); // Add this to prevent background scrolling
 });
 
-// Close mobile menu when clicking on a link
-document.querySelectorAll('.nav-menu a').forEach(link => {
+// Close mobile menu when clicking a nav link
+navLinks.forEach(link => {
     link.addEventListener('click', () => {
         mobileMenu.classList.remove('active');
         navMenu.classList.remove('active');
+        document.body.classList.remove('menu-open');
     });
 });
 
@@ -88,68 +91,43 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Navigation Menu Functionality
-document.addEventListener('DOMContentLoaded', () => {
-    // Mobile menu toggle
-    const mobileMenu = document.getElementById('mobile-menu');
-    const navMenu = document.querySelector('.nav-menu');
-    
-    mobileMenu?.addEventListener('click', () => {
-        navMenu.classList.toggle('active');
-        mobileMenu.classList.toggle('active');
+// Update active menu item on scroll
+window.addEventListener('scroll', () => {
+    let current = '';
+    const sections = document.querySelectorAll('section');
+    const headerHeight = document.querySelector('.navbar').offsetHeight;
+
+    sections.forEach(section => {
+        const sectionTop = section.offsetTop - headerHeight - 100;
+        if (window.scrollY >= sectionTop) {
+            current = section.getAttribute('id');
+        }
     });
 
-    // Smooth scroll for navigation links
-    document.querySelectorAll('.nav-menu a').forEach(link => {
-        link.addEventListener('click', (e) => {
-            e.preventDefault();
-            
-            // Close mobile menu if open
-            navMenu.classList.remove('active');
-            mobileMenu.classList.remove('active');
-            
-            // Get the target section id
-            const targetId = link.getAttribute('href');
-            const targetSection = document.querySelector(targetId);
-            
-            if (targetSection) {
-                // Calculate header height for offset
-                const headerHeight = document.querySelector('.navbar').offsetHeight;
-                
-                // Smooth scroll to section
-                window.scrollTo({
-                    top: targetSection.offsetTop - headerHeight,
-                    behavior: 'smooth'
-                });
-                
-                // Update active link
-                document.querySelectorAll('.nav-menu a').forEach(navLink => {
-                    navLink.classList.remove('active');
-                });
-                link.classList.add('active');
-            }
-        });
+    navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href').slice(1) === current) {
+            link.classList.add('active');
+        }
     });
+});
 
-    // Update active menu item on scroll
-    window.addEventListener('scroll', () => {
-        let current = '';
-        const sections = document.querySelectorAll('section');
-        const headerHeight = document.querySelector('.navbar').offsetHeight;
-
-        sections.forEach(section => {
-            const sectionTop = section.offsetTop - headerHeight - 100;
-            if (window.scrollY >= sectionTop) {
-                current = section.getAttribute('id');
-            }
-        });
-
-        document.querySelectorAll('.nav-menu a').forEach(link => {
-            link.classList.remove('active');
-            if (link.getAttribute('href') === `#${current}`) {
-                link.classList.add('active');
-            }
-        });
+// Smooth scroll for navigation links
+navLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+        e.preventDefault();
+        
+        const targetId = link.getAttribute('href');
+        const targetSection = document.querySelector(targetId);
+        
+        if (targetSection) {
+            const headerHeight = document.querySelector('.navbar').offsetHeight;
+            
+            window.scrollTo({
+                top: targetSection.offsetTop - headerHeight,
+                behavior: 'smooth'
+            });
+        }
     });
 });
 
@@ -268,4 +246,25 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     }
+});
+
+// Add active class to nav links on scroll
+window.addEventListener('scroll', () => {
+    let current = '';
+    const sections = document.querySelectorAll('section');
+    
+    sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        if (scrollY >= (sectionTop - sectionHeight / 3)) {
+            current = section.getAttribute('id');
+        }
+    });
+
+    navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href').slice(1) === current) {
+            link.classList.add('active');
+        }
+    });
 }); 
