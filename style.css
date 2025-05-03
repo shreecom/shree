@@ -239,6 +239,59 @@ body.menu-open {
     opacity: 0.9;
 }
 
+/* Responsive Slider Styles */
+@media screen and (max-width: 768px) {
+    .slide-content h2 {
+        font-size: 1.8rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .slide-content p {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .cta-button {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .slide-content {
+        padding: 1.2rem;
+    }
+
+    .slide-content h2 {
+        font-size: 1.4rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .slide-content p {
+        font-size: 0.85rem;
+        margin-bottom: 1rem;
+        line-height: 1.4;
+    }
+
+    .cta-button {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .slide-content h2 {
+        font-size: 20px;
+    }
+
+    .slide-content p {
+        font-size: 0.8rem;
+    }
+    .slide-content a{
+        font-size: 10px;
+    }
+}
+
 /* Professional Course Cards */
 .course-card {
     background: #ffffff;
