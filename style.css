@@ -226,7 +226,7 @@ body.menu-open {
 }
 
 .slide-content h2 {
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 700;
     margin-bottom: 1.5rem;
     line-height: 1.2;
@@ -234,7 +234,7 @@ body.menu-open {
 }
 
 .slide-content p {
-    font-size: 1.25rem;
+    font-size: 1rem;
     margin-bottom: 2rem;
     opacity: 0.9;
 }
@@ -242,12 +242,12 @@ body.menu-open {
 /* Responsive Slider Styles */
 @media screen and (max-width: 768px) {
     .slide-content h2 {
-        font-size: 1.8rem;
+        font-size: 1.4rem;
         margin-bottom: 0.8rem;
     }
 
     .slide-content p {
-        font-size: 1rem;
+        font-size: 0.5rem;
         margin-bottom: 1.5rem;
     }
 
@@ -263,12 +263,12 @@ body.menu-open {
     }
 
     .slide-content h2 {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
         margin-bottom: 0.5rem;
     }
 
     .slide-content p {
-        font-size: 0.85rem;
+        font-size: 0.8rem;
         margin-bottom: 1rem;
         line-height: 1.4;
     }
@@ -281,11 +281,11 @@ body.menu-open {
 
 @media screen and (max-width: 360px) {
     .slide-content h2 {
-        font-size: 20px;
+        font-size: 15px;
     }
 
     .slide-content p {
-        font-size: 0.8rem;
+        font-size: 0.4rem;
     }
     .slide-content a{
         font-size: 10px;
