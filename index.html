@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shree Computers Academy - Excellence in IT Education</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h1>Shree Computers Academy</h1>
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#courses" class="nav-link">Courses</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#why-choose-us" class="nav-link">Facilities</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Image Slider -->
+    <section class="hero" id="home">
+        <div class="slider-container">
+            <div class="slider">
+                <div class="slide active">
+                    <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3" alt="Modern Computer Lab">
+                    <div class="slide-content">
+                        <h2>State-of-the-Art Computer Lab</h2>
+                        <p>Learn on the latest hardware and software</p>
+                        <a href="#courses" class="cta-button">Explore Courses</a>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="https://images.unsplash.com/photo-1531297484001-80022131f5a1" alt="Modern Laptops">
+                    <div class="slide-content">
+                        <h2>Advanced Technology</h2>
+                        <p>Experience hands-on learning with modern equipment</p>
+                        <a href="#about" class="cta-button">Learn More</a>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644" alt="Students Learning">
+                    <div class="slide-content">
+                        <h2>Expert Guidance</h2>
+                        <p>Learn from industry professionals</p>
+                        
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758" alt="Computer Training Lab">
+                    <div class="slide-content">
+                        <h2>Professional Training Environment</h2>
+                        <p>Modern facilities for better learning</p>
+                        <a href="#contact" class="cta-button">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+            <button class="slider-btn prev"><i class="fas fa-chevron-left"></i></button>
+            <button class="slider-btn next"><i class="fas fa-chevron-right"></i></button>
+            <div class="slider-dots"></div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="courses-section">
+        <div class="container">
+            <h2 class="section-title">Our Courses</h2>
+            <p class="section-subtitle">Explore our comprehensive range of professional courses</p>
+            
+            <div class="courses-grid">
+                <div class="course-card">
+                    <div class="course-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Programming</h3>
+                    <ul class="course-features">
+                        <li>C Programming</li>
+                        <li>C++ Programming</li>
+                        <li>Java Programming</li>
+                        <li>Python Programming</li>
+                    </ul>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>Web Development</h3>
+                    <ul class="course-features">
+                        <li>HTML5 & CSS3</li>
+                        <li>JavaScript</li>
+                        <li>PHP & MySQL</li>
+                        <li>WordPress</li>
+                    </ul>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Database</h3>
+                    <ul class="course-features">
+                        <li>MySQL</li>
+                        <li>MongoDB</li>
+                        <li>Oracle</li>
+                        <li>SQL Server</li>
+                    </ul>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-icon">
+                        <i class="fas fa-drafting-compass"></i>
+                    </div>
+                    <h3>CAD/CAM</h3>
+                    <ul class="course-features">
+                        <li>AutoCAD</li>
+                        <li>3D Max</li>
+                        <li>Maya</li>
+                        <li>Fusion 360</li>
+                    </ul>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>MSCIT</h3>
+                    <ul class="course-features">
+                        <li>MS Office Suite</li>
+                        <li>Internet & Email</li>
+                        <li>Digital Skills</li>
+                        <li>Government Certified</li>
+                    </ul>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-icon">
+                        <i class="fas fa-table"></i>
+                    </div>
+                    <h3>Advanced Excel</h3>
+                    <ul class="course-features">
+                        <li>Advanced Formulas</li>
+                        <li>Pivot Tables</li>
+                        <li>VBA & Macros</li>
+                        <li>Data Analysis</li>
+                    </ul>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-icon">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                    <h3>Tally Prime</h3>
+                    <ul class="course-features">
+                        <li>GST Accounting</li>
+                        <li>Financial Management</li>
+                        <li>Inventory Management</li>
+                        <li>TDS & Banking</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title">About Us</h2>
+            <p class="section-subtitle">Two decades of excellence in IT education</p>
+
+            <div class="about-grid">
+                <!-- Experience Column -->
+                <div class="about-content">
+                    <h3>Our Journey</h3>
+                    <p class="about-description">
+                        For over 20 years, Shree Computers Academy has been at the forefront of IT education, 
+                        transforming passionate learners into industry-ready professionals. Our commitment to 
+                        excellence and innovative teaching methodologies has made us a trusted name in computer education.
+                    </p>
+                    
+                    <div class="achievements">
+                        <div class="achievement-card">
+                            <i class="fas fa-user-graduate"></i>
+                            <h4>10,000+</h4>
+                            <p>Students Trained</p>
+                        </div>
+                        <div class="achievement-card">
+                            <i class="fas fa-award"></i>
+                            <h4>95%</h4>
+                            <p>Placement Rate</p>
+                        </div>
+                        <div class="achievement-card">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                            <h4>50+</h4>
+                            <p>Expert Trainers</p>
+                        </div>
+                        <div class="achievement-card">
+                            <i class="fas fa-certificate"></i>
+                            <h4>20+</h4>
+                            <p>Years Experience</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Features Column -->
+                <div class="about-features">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Modern Curriculum</h4>
+                            <p>Industry-aligned courses updated with latest technologies</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Expert Faculty</h4>
+                            <p>Learn from industry professionals with years of experience</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Practical Training</h4>
+                            <p>Hands-on experience with real-world projects</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <div class="feature-content">
+                                <h4>Placement Support</h4>
+                            <p>Dedicated placement cell with industry connections</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section id="why-choose-us" class="why-choose-section">
+        <div class="container">
+            <h2 class="section-title">Why Choose Us?</h2>
+            <p class="section-subtitle">Discover what makes us the preferred choice for IT education</p>
+
+            <!-- Key Benefits -->
+            <div class="benefits-container">
+                <div class="benefits-grid">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-medal"></i>
+                        </div>
+                        <h3>20+ Years Experience</h3>
+                        <p>Two decades of excellence in IT education and training</p>
+                    </div>
+
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-user-graduate"></i>
+                        </div>
+                        <h3>10,000+ Alumni</h3>
+                        <p>Strong network of successful professionals across industries</p>
+                    </div>
+
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>95% Placement Rate</h3>
+                        <p>Excellent track record in student placements</p>
+                    </div>
+
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                        </div>
+                        <h3>Expert Faculty</h3>
+                        <p>Learn from industry professionals with vast experience</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Features Grid -->
+            <div class="features-container">
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <i class="fas fa-clock"></i>
+                        <h4>Flexible Timing</h4>
+                        <ul>
+                            <li>Morning & Evening Batches</li>
+                            <li>Weekend Programs</li>
+                            <li>Fast-track Courses</li>
+                        </ul>
+                    </div>
+
+                    <div class="feature-item">
+                        <i class="fas fa-laptop-code"></i>
+                        <h4>Practical Training</h4>
+                        <ul>
+                            <li>Hands-on Projects</li>
+                            <li>Real-world Applications</li>
+                            <li>Industry-based Learning</li>
+                        </ul>
+                    </div>
+
+                    <div class="feature-item">
+                        <i class="fas fa-certificate"></i>
+                        <h4>Certifications</h4>
+                        <ul>
+                            <li>Industry Recognized</li>
+                            <li>Government Approved</li>
+                            <li>Placement Assistance</li>
+                        </ul>
+                    </div>
+
+                    <div class="feature-item">
+                        <i class="fas fa-users"></i>
+                        <h4>Personal Attention</h4>
+                        <ul>
+                            <li>Small Batch Size</li>
+                            <li>One-to-One Guidance</li>
+                            <li>Doubt Clearing Sessions</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimonial Section -->
+            <div class="testimonials">
+                <h3>What Our Students Say</h3>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <i class="fas fa-quote-left"></i>
+                            <p>"The practical approach to teaching and industry-relevant curriculum helped me secure my dream job. Excellent faculty and infrastructure!"</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="Student">
+                            <div class="author-info">
+                                <h4>Rahul Sharma</h4>
+                                <p>Software Developer at TCS</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <i class="fas fa-quote-left"></i>
+                            <p>"The flexible timing and personalized attention from faculty made learning easy. The placement support was exceptional!"</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="https://randomuser.me/api/portraits/women/1.jpg" alt="Student">
+                            <div class="author-info">
+                                <h4>Priya Patel</h4>
+                                <p>Web Developer at Infosys</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <i class="fas fa-quote-left"></i>
+                            <p>"State-of-the-art facilities and expert guidance helped me transition into IT. Best decision I made for my career!"</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="https://randomuser.me/api/portraits/men/2.jpg" alt="Student">
+                            <div class="author-info">
+                                <h4>Amit Kumar</h4>
+                                <p>System Analyst at Wipro</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Call to Action -->
+            <div class="cta-container">
+                <h3>Start Your IT Career Journey Today</h3>
+                <p>Join thousands of successful alumni who transformed their careers with us</p>
+                <a href="#contact" class="cta-button">Enroll Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <p class="section-subtitle">Get in touch with us for any queries</p>
+
+            <div class="contact-wrapper">
+                <!-- Contact Information Cards -->
+                <div class="contact-info-grid">
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Our Location</h3>
+                            <p>Near Jai Shankar Petrol Pump, apposite to Ghate Complex,Bhadgaon Road,Chalisgaon,Dist-Jalgaon</p>
+                            <p>Maharashtra 424101</p>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Call Us</h3>
+                            <p>+91 9922781801</p>
+                            <p>+91 8999886266</p>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Email Us</h3>
+                            <p>11210205@mkcl.org</p>
+                            
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Working Hours</h3>
+                            <p>Monday - Saturday: 8:00 AM - 8:00 PM</p>
+                            <p>Sunday: Closed</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Social Media Links -->
+                <div class="social-media-section">
+                    <h3>Connect With Us</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link" title="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-link" title="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                       
+                        <a href="#" class="social-link" title="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                       
+                    </div>
+                </div>
+
+                <!-- Map Section -->
+                <div class="map-section">
+                    <h3>Find Us On Map</h3>
+                    <div class="map-container">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3721.1234567890123!2d72.12345678901234!3d21.123456789012345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjHCsDA3JzM0LjQiTiA3MsKwMDcnNDUuNiJF!5e0!3m2!1sen!2sin!4v1234567890123!5m2!1sen!2sin" 
+                            width="100%" 
+                            height="400" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Simple Footer -->
+    <footer class="simple-footer">
+        <div class="container">
+            <div class="footer-info">
+                <p><i class="fas fa-phone"></i> <a href="tel:+919970299902" >+91 9970299902 </a></p>
+                <p><i class="fas fa-envelope"></i> 11210205@mkcl.org</p>
+                <p><i class="fas fa-map-marker-alt"></i> apposite to Ghate Complex,Bhadgaon Road,Chalisgaon,Dist-Jalgaon</p>
+            </div>
+            <p class="copyright">&copy; 2024 Shree Computers Academy</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
