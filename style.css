@@ -133,7 +133,10 @@ h1, h2, h3, h4, h5, h6 {
 body.menu-open {
     overflow: hidden;
 }
-
+a{
+    text-decoration: none;
+    color: black;
+}
 @media screen and (max-width: 768px) {
     .menu-toggle {
         display: block;
@@ -1374,35 +1377,7 @@ body {
     }
 }
 
-/* Simple Footer Styles */
-.simple-footer {
-    background-color: #1f2937;
-    color: #fff;
-    padding: 2rem 0;
-    margin-top: 2rem;
-}
 
-.footer-info {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    margin-bottom: 1rem;
-}
-
-.footer-info p {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-}
-
-.footer-info i {
-    color: #38bdf8;
-}
-
-.copyright {
-    text-align: center;
-    color: #9ca3af;
-}
 
 @media (max-width: 768px) {
     .footer-info {
